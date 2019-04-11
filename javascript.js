@@ -190,7 +190,6 @@ function getMyBands(artistName) {
         method: 'get',
         url: "https://rest.bandsintown.com/artists/" + artistName + "/events?app_id=codingbootcamp",
     }).then(function (response) {
-        console.log(response.data);
 
         console.log("Upcoming concerts for " + artistName + ":");
         var data = response.data;
